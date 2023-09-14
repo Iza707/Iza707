@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="CSS\Order_Now.css">
+    </head>
+    <title>
+        Transaction Page
+    </title>
+    <img src="Images\Flash_Express_Logo.png"
+        class = "center">
+    <h1>
+        Welcome
+    </h1>
+    <h2>
+        to Flash Express's Transaction Page
+    </h2>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form>      
+              <div class="row">
+                <div class="col-50">
+                  <h3>Billing Address</h3>
+                  <label for="fname"><i class="fa fa-user"></i>Full Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="John XXXX Doe">
+                  <label for="email"><i class="fa fa-envelope"></i>Email</label>
+                  <input type="text" id="email" name="email" placeholder="XXXXX@gmail.com">
+                  <label for="adr"><i class="fa fa-address-card-o"></i>Address</label>
+                  <input type="text" id="adr" name="address" placeholder="XXXX XXXXXXXX St.">
+                  <label for="city"><i class="fa fa-institution"></i> City</label>
+                  <input type="text" id="city" name="city" placeholder="Manila">
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="state">State</label>
+                      <input type="text" id="state" name="state" placeholder="QC">
+                    </div>
+                    <div class="col-50">
+                      <label for="zip">Zip</label>
+                      <input type="text" id="zip" name="zip" placeholder="9999">
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-50">
+                  <h3>Payment</h3>
+                  <label for="fname">Accepted Modes of Payment</label>
+                  <div class="icon-container">
+                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    <i class="fa fa-cc-paypal" style="color:#3b7bbf"></i>
+                    <i class="fa fa-money" style="color: #145b0e"></i>                
+                  </div>
+
+                  <label for="cname">Name on Card</label>
+                  <input type="text" id="cname" name="cardname" placeholder="XXXX XXXXXX XXXXX">
+                  <label for="ccnum">Credit card number</label>
+                  <input type="text" id="ccnum" name="cardnumber" placeholder="XXXX-XXXX-XXXX-XXXX">
+                  <label for="expmonth">Expiration Month</label>
+                  <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                  
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expyear">Expiration Year</label>
+                      <input type="text" id="expyear" name="expyear" placeholder="20XX">
+                    </div>
+                    <div class="col-50">
+                      <label for="cvv">CVV</label>
+                      <input type="text" id="cvv" name="cvv" placeholder="XXX">
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+              <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+              </label>
+
+              <!--<button class="btn" id="PAYSubmit">Finalize Payment</button>-->
+              <input type=button onClick="location.href='\Order_Final.html'" value='Finalize Payment' class="btn">
+
+              <!--<script>
+                document.getElementById("PAYSubmit").onclick = function () {
+                  location.href = "..\Project 5.2\Order_Final.html";
+                };
+              </script>--> <!--I DONT KNOW WHY THIS SCRIPT WONT WORK UGHHHHH-->
+
+
+            </form>
+          </div>
+        </div>
+
+    </div>
+        
+        <div class="col-25">
+            <body>
+                <p style="text-align: center;">
+                  <a href="..\Project 5.2\Home.html" rel="import">Back to Home Page</a></p>
+            </body>
+        </div>
+</html>
